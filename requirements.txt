@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+celery[redis]
+redis
+pygithub
+python-dotenv
+pytest
+httpx
+ollama
