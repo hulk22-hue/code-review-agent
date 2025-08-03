@@ -35,7 +35,7 @@ def analyze_code_files(files):
         try:
             response = httpx.post(
                 f"{OLLAMA_BASE_URL}/api/generate",
-                json={"model": "llama3", "prompt": prompt, "stream": False},
+                json={"model": "phi3:mini", "prompt": prompt, "stream": False},
                 timeout=90
             )
             response.raise_for_status()

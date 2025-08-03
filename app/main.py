@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from app.api.endpoints import router as api_router
-from utils.logging import configure_logging
+from app.utils.logging import configure_logging
 
 configure_logging
 app = FastAPI(title="Autonomous Code Review Agent")
